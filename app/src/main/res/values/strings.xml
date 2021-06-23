@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CIN Prototype</string>
+    <string name="age">Is the patient older than 75?</string>
+    <string name="CKD">Does the patient have CKD? (GFR &lt; 60 from baseline)</string>
+    <string name="contrast">Has the patient received contrast dye in the past 48 hours?</string>
+    <string name="hypovolemic">Is the patient hypovolemic?</string>
+    <string name="hypotensive">Is the patient hypotensive?</string>
+    <string name="nt">Has the patient recently taken nephrotoxic medications? &#10; (NSAIDS, ACE/ARB, diurectics, vancomycin)</string>
+    <string name="sepsis">Is the patient presentation consistent with sepsis?</string>
+
+
 </resources>

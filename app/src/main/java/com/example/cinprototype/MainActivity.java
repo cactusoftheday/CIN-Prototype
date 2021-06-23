@@ -2,11 +2,13 @@ package com.example.cinprototype;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.Button;
 import android.os.Bundle;
 import android.app.AlertDialog;
+import android.widget.ToggleButton;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,53 +16,52 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        CheckBox age = findViewById(R.id.age);
-        CheckBox hematocrit = findViewById(R.id.hematocrit);
-        CheckBox diabetic = findViewById(R.id.diabetic);
-        CheckBox anemic = findViewById(R.id.anemic);
-        CheckBox IABP = findViewById(R.id.IABP);
-        CheckBox CHF = findViewById(R.id.CHF);
-        CheckBox CKD = findViewById(R.id.CKD);
-        CheckBox eGFR = findViewById(R.id.eGFR);
-        Button submit = findViewById(R.id.submit);
+        ToggleButton age = findViewById(R.id.age);
+        ToggleButton sepsis = findViewById(R.id.sepsis);
+        ToggleButton nephrotoxic = findViewById(R.id.nephrotoxic);
+        ToggleButton CKD = findViewById(R.id.CKD);
+        ToggleButton hypotensive = findViewById(R.id.hypotensive);
+        ToggleButton AKI = findViewById(R.id.AKI);
+        ToggleButton contrast = findViewById(R.id.contrast);
+        ToggleButton hypovolemic = findViewById(R.id.hypovolemic);
 
+        Button submit = findViewById(R.id.submit);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View v) {
                 int risk = 0;
                 if(age.isChecked()){
                     risk++;
                     age.setChecked(false);
                 }
-                if(hematocrit.isChecked()){
+                if(sepsis.isChecked()){//take out
                     risk++;
-                    hematocrit.setChecked(false);
+                    sepsis.setChecked(false);
                 }
-                if(diabetic.isChecked()){
+                if(nephrotoxic.isChecked()){
                     risk++;
-                    diabetic.setChecked(false);
+                    nephrotoxic.setChecked(false);
                 }
-                if (anemic.isChecked()){
+                if (hypotensive.isChecked()){//take out
                     risk++;
-                    anemic.setChecked(false);
+                    hypotensive.setChecked(false);
                 }
-                if (IABP.isChecked()){
+                if (AKI.isChecked()){//take out
                     risk++;
-                    IABP.setChecked(false);
+                    AKI.setChecked(false);
                 }
-                if (CHF.isChecked()){
+                if (contrast.isChecked()){//take out
                     risk++;
-                    CHF.setChecked(false);
+                    contrast.setChecked(false);
                 }
                 if (CKD.isChecked()){
                     risk++;
                     CKD.setChecked(false);
                 }
-                if (eGFR.isChecked()){
+                if (hypovolemic.isChecked()){
                     risk++;
-                    eGFR.setChecked(false);
+                    hypovolemic.setChecked(false);
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 if(risk == 1){
@@ -71,10 +72,20 @@ public class MainActivity extends AppCompatActivity {
                 }
                 builder.setCancelable(true);
                 builder.setTitle("Results:");
+                builder.setPositiveButton("Continue to survey", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        openSurvey();
+                    }
+                });
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
             }
         });
 
+    }
+    public void openSurvey(){
+        Intent intent = new Intent(this, Survey.class);
+        startActivity(intent);
     }
 }
