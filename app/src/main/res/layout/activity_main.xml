@@ -11,255 +11,97 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="9"
-            android:orientation="horizontal">
+            android:layout_weight="9">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Is the patient older than 75?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Is the patient's hematocrit percentage under 36?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Is the patient diabetic?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Is the patient anemic?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Is the patient on an Intra-Aortic Balloon Pump?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Does the patient have congestive heart failure?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Does the patient have pre-existing kidney problems?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Is the patient's eGFR less than 30'?" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:id="@+id/age"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <CheckBox
-                    android:id="@+id/hematocrit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />\
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-                <!--
-            <CheckBox
-                android:id="@+id/contrastInjected"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Yes" />
-            <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/black"/>-->
-                <CheckBox
-                    android:id="@+id/diabetic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <View
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/sepsis"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
+                    android:layout_height="100dp"
+                    android:text="@string/sepsis"
+                    android:textOff="@string/sepsis"
+                    android:textOn="@string/sepsis" />
 
-                <CheckBox
-                    android:id="@+id/anemic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
-
-                <View
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/nephrotoxic"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/nt"
+                    android:textOff="@string/nt"
+                    android:textOn="@string/nt" />
 
-                <CheckBox
-                    android:id="@+id/IABP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <CheckBox
-                    android:id="@+id/CHF"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
-
-                <CheckBox
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
                     android:id="@+id/CKD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
-
-                <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/CKD"
+                    android:textOff="@string/CKD"
+                    android:textOn="@string/CKD" />
 
-                <CheckBox
-                    android:id="@+id/eGFR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Yes" />
-
-                <View
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/hypotensive"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black" />
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/hypovolemic"
+                    android:textOff="@string/hypovolemic"
+                    android:textOn="@string/hypovolemic" />
+
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/age"
+                    android:textOff="@string/age"
+                    android:textOn="@string/age" />
+
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/AKI"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Does the patient have AKI?\nCr 1.5x baseline presumed over last week, or \nIncreased Cr > 27 mmol/L in last 48 hrs, or \nOliguric (&lt; 0.5ml/kg/hr over last 6 hrs)"
+                    android:textOff="Does the patient have AKI?\nCr 1.5x baseline presumed over last week, or \nIncreased Cr > 27 mmol/L in last 48 hrs, or \nOliguric (&lt; 0.5ml/kg/hr over last 6 hrs)"
+                    android:textOn="Does the patient have AKI?\nCr 1.5x baseline presumed over last week, or \nIncreased Cr > 27 mmol/L in last 48 hrs, or \nOliguric (&lt; 0.5ml/kg/hr over last 6 hrs)" />
+
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/contrast"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/contrast"
+                    android:textOff="@string/contrast"
+                    android:textOn="@string/contrast" />
+
+                <ToggleButton
+                    android:background="@drawable/toggle_selector"
+                    android:id="@+id/hypovolemic"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/hypovolemic"
+                    android:textOff="@string/hypovolemic"
+                    android:textOn="@string/hypovolemic" />
             </LinearLayout>
-
-        </LinearLayout>
+        </ScrollView>
 
         <Button
             android:id="@+id/submit"
