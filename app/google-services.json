@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "599320635663",
+    "project_id": "cin-prototype",
+    "storage_bucket": "cin-prototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599320635663:android:101626f0de0b1f8ebd767a",
+        "android_client_info": {
+          "package_name": "com.example.cinprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599320635663-5n81lkgpag4v7d28bsk0ujdos0q4t2gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQPWut3TfZ_EBy1UwPd9LUruY-_TOiXtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599320635663-5n81lkgpag4v7d28bsk0ujdos0q4t2gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
