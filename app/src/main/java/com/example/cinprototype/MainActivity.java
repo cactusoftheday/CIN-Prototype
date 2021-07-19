@@ -65,10 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 if(risk == 1){
-                    builder.setMessage("The patient has a total of "+Integer.toString(risk)+" risk");
+                    builder.setMessage("The patient has a total of "+Integer.toString(risk)+" risk for developing CIN.");
                 }
                 else{
-                    builder.setMessage("The patient has a total of "+Integer.toString(risk)+" risks");
+                    builder.setMessage("The patient has a total of "+Integer.toString(risk)+" risks for developing CIN.");
                 }
                 builder.setCancelable(true);
                 builder.setTitle("Results:");
