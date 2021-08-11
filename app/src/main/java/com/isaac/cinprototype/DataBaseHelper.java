@@ -1,4 +1,4 @@
-package com.example.cinprototype;
+package com.isaac.cinprototype;
 
 import android.content.ContentValues;
 import android.content.Context;

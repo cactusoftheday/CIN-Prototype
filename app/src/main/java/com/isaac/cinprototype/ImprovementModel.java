@@ -1,4 +1,4 @@
-package com.example.cinprototype;
+package com.isaac.cinprototype;
 
 public class ImprovementModel {
     private boolean helpful;
@@ -7,12 +7,14 @@ public class ImprovementModel {
     private String profession;
     private int years;
     private String platform;
+    private String training;
 
-    public ImprovementModel(boolean helpful, boolean decisionChange, String profession, int years, String suggestions, String platform) {
+    public ImprovementModel(boolean helpful, boolean decisionChange, String profession, String training, int years, String suggestions, String platform) {
         this.helpful = helpful;
         this.decisionChange = decisionChange;
         this.suggestions = suggestions;
         this.profession = profession;
+        this.training = training;
         this.years = years;
         this.platform = platform;
     }
@@ -25,6 +27,14 @@ public class ImprovementModel {
         this.platform = platform;
     }
 
+    public String getTraining() {
+        return training;
+    }
+
+    public void setTraining(String training) {
+        this.training = training;
+    }
+
     @Override
     public String toString() {
         return "ImprovementModel{" +
@@ -33,6 +43,8 @@ public class ImprovementModel {
                 ", suggestions='" + suggestions + '\'' +
                 ", profession='" + profession + '\'' +
                 ", years=" + years +
+                ", platform='" + platform + '\'' +
+                ", training='" + training + '\'' +
                 '}';
     }
 

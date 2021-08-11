@@ -1,4 +1,4 @@
-package com.example.cinprototype;
+package com.isaac.cinprototype;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.cinprototype", appContext.getPackageName());
+        assertEquals("com.isaac.cinprototype", appContext.getPackageName());
     }
 }

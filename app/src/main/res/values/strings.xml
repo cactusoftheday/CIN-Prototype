@@ -9,9 +9,50 @@
     <string name="nt">Has the patient recently taken nephrotoxic medications? &#10; (NSAIDS, ACE/ARB, diurectics, vancomycin)</string>
     <string name="sepsis">Is the patient presentation consistent with sepsis?</string>
     <string-array name="profession_array">
+        <item>Resident/Fellow</item>
         <item>Physician</item>
-        <item>Pharmacist</item>
-        <item>ER Doctor</item>
+        <item>Nurse Practitioner</item>
+    </string-array>
+    <string-array name="resident_array">
+        <item>Anesthesia</item>
+        <item>Emergency Medicine</item>
+        <item>Family Medicine</item>
+        <item>General Surgery</item>
+        <item>Internal Medicine</item>
+        <item>Neurology</item>
+        <item>Neurosurgery</item>
+        <item>Obstetrics and Gynecology</item>
+        <item>Orthopedic Surgery</item>
+        <item>Plastic Surgery</item>
+        <item>Psychiatry</item>
+        <item>Physical Medicine and Rehabilitation</item>
+    </string-array>
+    <string-array name="physician_array">
+        <item>Anesthesia</item>
+        <item>Critical Care</item>
+        <item>Emergency Medicine</item>
+        <item>Family Medicine</item>
+        <item>General Surgery</item>
+        <item>Internal Medicine</item>
+        <item>Neurology</item>
+        <item>Neurosurgery</item>
+        <item>Obstetrics and Gynecology</item>
+        <item>Orthopedic Surgery</item>
+        <item>Plastic Surgery</item>
+        <item>Psychiatry</item>
+        <item>Physical Medicine and Rehabilitation</item>
+    </string-array>
+    <string-array name="nurse_array">
+        <item>Family Medicine</item>
+        <item>General Surgery</item>
+        <item>Internal Medicine</item>
+        <item>Neurology</item>
+        <item>Neurosurgery</item>
+        <item>Obstetrics and Gynecology</item>
+        <item>Orthopedic Surgery</item>
+        <item>Plastic Surgery</item>
+        <item>Psychiatry</item>
+        <item>Physical Medicine and Rehabilitation</item>
     </string-array>
 
 </resources>

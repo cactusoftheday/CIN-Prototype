@@ -1,4 +1,4 @@
-package com.example.cinprototype;
+package com.isaac.cinprototype;
 
 import org.junit.Test;
 
