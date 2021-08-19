@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.isaac.cinprototype">
+    package="com.isaac.cincalculator">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.CINPrototype">
-        <activity android:name="com.isaac.cinprototype.SplashActivity">
+        <activity android:name="com.isaac.cincalculator.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.isaac.cinprototype.Survey" />
-        <activity android:name="com.isaac.cinprototype.BootUpTwo" />
-        <activity android:name="com.isaac.cinprototype.MainActivity" />
-        <activity android:name="com.isaac.cinprototype.BootUp"/>
+        <activity android:name="com.isaac.cincalculator.Survey" />
+        <activity android:name="com.isaac.cincalculator.BootUpTwo" />
+        <activity android:name="com.isaac.cincalculator.MainActivity" />
+        <activity android:name="com.isaac.cincalculator.BootUp"/>
     </application>
 </manifest>

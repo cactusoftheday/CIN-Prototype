@@ -1,4 +1,4 @@
-package com.isaac.cinprototype;
+package com.isaac.cincalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,26 +8,28 @@ import android.os.Bundle;
 import android.app.AlertDialog;
 import android.content.Intent;
 
-public class BootUpTwo extends AppCompatActivity {
+import com.isaac.cincalculator.R;
+
+public class BootUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boot_up_two);
+        setContentView(R.layout.activity_boot_up);
         Button Yes = findViewById(R.id.button2);
         Button No = findViewById(R.id.button);
         No.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMainActivity();
+                openSecondBootUpActivity();
             }
         });
 
         Yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(BootUpTwo.this);
-                builder.setMessage("Please proceed with a non-contrast test.");
+                AlertDialog.Builder builder = new AlertDialog.Builder(BootUp.this);
+                builder.setMessage("Please proceed with the test.");
                 builder.setCancelable(true);
                 builder.setTitle("Result:");
                 AlertDialog alertDialog = builder.create();
@@ -35,8 +37,8 @@ public class BootUpTwo extends AppCompatActivity {
             }
         });
     }
-    public void openMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+    public void openSecondBootUpActivity() {
+        Intent intent = new Intent(this, BootUpTwo.class);
         startActivity(intent);
     }
 }

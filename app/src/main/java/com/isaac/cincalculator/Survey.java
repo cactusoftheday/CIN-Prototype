@@ -1,10 +1,8 @@
-package com.isaac.cinprototype;
+package com.isaac.cincalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -14,8 +12,7 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.lang.reflect.Array;
+import com.isaac.cincalculator.R;
 
 //
 public class Survey extends AppCompatActivity {

@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "599320635663",
-    "project_id": "cin-prototype",
-    "storage_bucket": "cin-prototype.appspot.com"
+    "project_id": "cin-calculator",
+    "storage_bucket": "cin-calculator.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:599320635663:android:101626f0de0b1f8ebd767a",
         "android_client_info": {
-          "package_name": "com.isaac.cinprototype"
+          "package_name": "com.isaac.cincalculator"
         }
       },
       "oauth_client": [

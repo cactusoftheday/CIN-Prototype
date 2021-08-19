@@ -1,4 +1,4 @@
-package com.isaac.cinprototype;
+package com.isaac.cincalculator;
 
 import org.junit.Test;
 
